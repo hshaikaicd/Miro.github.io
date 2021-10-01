@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://miro.com/app/static/sdk.1.1.js"></script>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+    <script>
+      miro.onReady(() => {
+        function close() {
+          miro.board.ui.closeModal();
+        }
+        setTimeout(close, 40000);
+      });
+    </script>
+  </head>
+  <body>
+    <img
+      src="https://github.com/hshaikaicd/MiroBanner/blob/main/AICD.png"
+    />
+    <h1>AICD SECURITY NOTICE</h1>
+    <p>Do not upload classified information to Miro.</p>
+    <p>
+      You must not enter or store personal information of
+      third parties, such as members, in this tool.
+    </p>
+    <button onclick="miro.board.ui.closeModal();">Close</button>
+  </body>
+</html>
